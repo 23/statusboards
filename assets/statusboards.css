@@ -1,0 +1,87 @@
+.section-wide a, .section-wide a:link {text-decoration:underline; color:#00CC4E; }
+h1, h2 {
+    margin-top:80px;
+}
+dash {
+    display:block;
+    padding:20px 0;
+    clear:left;
+}
+done, building, bug, missing, later {
+    display:block;
+    float:left;
+    width:30%;
+    height:60px;
+    line-height:60px;
+    background-color:#ddd;
+    color:#999999;
+    font-size:22px;
+    padding:0 60px;
+    border-radius:30px;
+    margin:0 3% 20px 0;
+    position:relative;
+}
+done::after, building::after, missing::after, bug::after, later::after {
+    position:absolute;
+    top:5px;
+    right:5px;
+    display:inline-block;
+    height:50px;
+    width:50px;
+    border-radius:25px;
+    content:' ';
+    background: center center url('http://rangu.23demo.com/icons/32x32/DDDDDD/lock-fill.svg') white no-repeat;
+}
+
+done::before, building::before, missing::before, bug::before, later::before {
+    position:absolute;
+    top:8px;
+    left:8px;
+    display:inline-block;
+    height:44px;
+    width:44px;
+    border-radius:22px;
+    content:' ';
+    background: center center #f0f0f0 no-repeat;
+    background-size: contain;
+    opacity:.8;
+}
+later::before {
+    background-color: #888;
+}
+
+
+done {background-color:#00CF41; color:white;}
+done::after {background-image:url('http://rangu.23demo.com/icons/32x32/00CF41/check.svg')}
+
+bug {background-color:#FFC40D; color:white;}
+bug::after {background-image:url('http://rangu.23demo.com/icons/32x32/FFC40D/warning.svg')}
+
+building {background-color:#0D61FF; color:white;}
+building::after {background-image:url('http://rangu.23demo.com/icons/32x32/0D61FF/labs.svg')}
+
+missing {background-color:#FF2B3C; color:white;}
+missing::after {background-image:url('http://rangu.23demo.com/icons/32x32/FF2B3C/error.svg')}
+
+
+[steffen]::before {
+    background-image:url('https://avatars0.githubusercontent.com/u/16313?s=460');
+}
+[kronborg]::before {
+    background-image:url('https://avatars0.githubusercontent.com/u/62870?s=460');
+}
+[storm]::before {
+    background-image:url('https://avatars0.githubusercontent.com/u/2248455?s=460');
+}
+[vasil]::before {
+    background-image:url('https://avatars0.githubusercontent.com/u/10707142?s=460');
+}
+[dennis]::before {
+    background-image:url('https://avatars0.githubusercontent.com/u/656207?s=460');
+}
+[ruslan]::before {
+    background-image:url('https://avatars0.githubusercontent.com/u/618196?s=460');
+}
+
+
+
